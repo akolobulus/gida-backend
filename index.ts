@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import { PrismaClient } from '@prisma/client';
-import { authenticate, AuthRequest } from './middleware/auth';
+import { authenticate, AuthRequest } from './src/middleware/auth';
 import { createPaystackCustomer, createVirtualAccount } from './utils/paystack';
 
 dotenv.config();
